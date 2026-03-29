@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Priyanka's Skin & Hair Clinic | Panchkula</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --skin-rose: #fce4ec;
+            --deep-gold: #d4af37;
+            --text-dark: #3a3a3a;
+            --white: #ffffff;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; overflow-x: hidden; color: var(--text-dark); background-color: #fdfdfd; }
+        
+        /* Premium Navbar */
+        nav { 
+            background: rgba(255, 255, 255, 0.9); padding: 15px 5%; display: flex; justify-content: space-between; 
+            align-items: center; box-shadow: 0 2px 15px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(10px);
+        }
+        .logo-box { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-box i { font-size: 1.8rem; color: #e91e63; }
+        .logo-text { font-weight: bold; color: var(--text-dark); font-size: 1.2rem; line-height: 1.1; }
+
+        .btn-call { background: #e91e63; color: white; padding: 10px 18px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: 0.3s; }
+
+        /* Skin Clinic Hero */
+        .hero {
+            background: linear-gradient(rgba(255, 240, 245, 0.6), rgba(255, 240, 245, 0.6)), 
+                        url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover; background-position: center; height: 450px; 
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+        }
+        .hero h1 { font-size: 2.8rem; color: #880e4f; margin-bottom: 10px; font-weight: 300; }
+
+        /* Hours Section Table */
+        .section { padding: 80px 8%; max-width: 1200px; margin: 0 auto; }
+        .grid-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+        
+        .hours-card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid var(--skin-rose); }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem; }
+        td { padding: 10px 0; border-bottom: 1px solid #eee; }
+        .day { font-weight: bold; color: #880e4f; }
+
+        /* Service Cards */
+        .service-card {
+            background: white; padding: 30px; border-radius: 15px; border-bottom: 4px solid #e91e63;
+            transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+        .service-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .service-card i { font-size: 2.5rem; color: #e91e63; margin-bottom: 15px; }
+
+        /* Booking Section */
+        .booking-box { background: #fff1f6; padding: 50px; border-radius: 30px; margin-top: 50px; text-align: center; }
+        .form-input { width: 100%; padding: 15px; margin: 10px 0; border: 1px solid #ddd; border-radius: 10px; }
+        .submit-btn { background: #880e4f; color: white; border: none; padding: 15px 40px; border-radius: 50px; font-weight: bold; cursor: pointer; font-size: 1.1rem; transition: 0.3s; }
+        .submit-btn:hover { background: #e91e63; }
+
+        footer { background: #333; color: white; padding: 40px 5%; text-align: center; margin-top: 100px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo-box">
+            <i class="fas fa-magic"></i>
+            <div class="logo-text">DR. PRIYANKA GUPTA<br><span style="font-size:0.8rem; font-weight:300;">SKIN & HAIR CLINIC</span></div>
+        </a>
+        <a href="tel:08427043155" class="btn-call"><i class="fas fa-phone"></i> 084270 43155</a>
+    </nav>
+
+    <div class="hero">
+        <h1 data-aos="fade-down" data-aos-duration="1000">Reveal Your Best Skin</h1>
+        <p data-aos="fade-up" data-aos-delay="300">Advanced Dermatology & Hair Restoration in Panchkula</p>
+    </div>
+
+    <div class="section">
+        <div class="grid-info">
+            <div class="hours-card" data-aos="fade-right">
+                <h3><i class="far fa-clock"></i> Clinic Timings</h3>
+                <table>
+                    <tr><td class="day">Mon - Sat</td><td>10:00 am – 1:00 pm, 5:00 – 7:00 pm</td></tr>
+                    <tr><td class="day">Sunday</td><td>10:00 am – 1:00 pm (Morning Only)</td></tr>
+                    <tr><td colspan="2" style="color:#e91e63; font-size:0.8rem; border:none; padding-top:10px;">*Hours might differ on holidays</td></tr>
+                </table>
+            </div>
+
+            <div class="hours-card" data-aos="fade-left">
+                <h3><i class="fas fa-map-marked-alt"></i> Find Us</h3>
+                <p>1382, near Alchemist Hospital Road,<br>Sector 21, Budanpur, Panchkula,<br>Haryana 134117</p>
+                <a href="http://googleusercontent.com/maps.google.com/5" target="_blank" style="color:#e91e63; text-decoration:none; font-weight:bold;">Get Directions <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" style="background:#fff;">
+        <h2 style="text-align:center" data-aos="zoom-in">Expert Care Services</h2>
+        <div class="grid-info" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-spa"></i>
+                <h3>Medical Facials</h3>
+                <p>Advanced peels and glow treatments for radiant skin.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-user-friends"></i>
+                <h3>Hair Loss Clinic</h3>
+                <p>Expert hair restoration and scalp health analysis.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Acne Control</h3>
+                <p>Specialized treatments for scars and active acne.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-leaf"></i>
+                <h3>Anti-Aging</h3>
+                <p>Modern solutions to restore your youthful confidence.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="booking-box" data-aos="zoom-in-up">
+            <h2>Book an Appointment</h2>
+            <p>Schedule your skin analysis session with Dr. Priyanka Gupta today.</p>
+            <form>
+                <input type="text" placeholder="Patient Full Name" class="form-input" required>
+                <input type="tel" placeholder="Mobile Number" class="form-input" required>
+                <select class="form-input">
+                    <option>Skin Concern</option>
+                    <option>Hair Concern</option>
+                    <option>General Consultation</option>
+                </select>
+                <button type="submit" class="submit-btn">CONFIRM REQUEST</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Dr. Priyanka Gupta</strong> - Dermatologist in Panchkula</p>
+        <p>1382, Sector 21, Panchkula | 084270 43155</p>
+        <p style="font-size:0.8rem; opacity:0.5; margin-top:20px;">© 2026 Designed for Dr. Priyanka's Skin Clinic</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: false });
+    </script>
+</body>
+</html>
